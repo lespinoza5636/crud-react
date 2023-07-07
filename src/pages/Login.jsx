@@ -14,7 +14,7 @@ const Login = () => {
     e.preventDefault();
     const Form = new FormData(e.target);
     const {email, password} = Object.fromEntries(Form);
-
+    
     try {
       await loginFunction(email, password);
       Swal.fire({
